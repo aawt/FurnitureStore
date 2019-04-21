@@ -1,6 +1,6 @@
 # Furniture Store
 ---
-### Epicodus Independent Project April 19th, 2019
+### Epicodus Code Challenge April 19th, 2019
 ## by Aaron Taylor
 ---
 ### Description

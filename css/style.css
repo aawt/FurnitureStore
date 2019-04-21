@@ -1,0 +1,14 @@
+body {
+    background-color:#ccc;
+}
+tr {
+  font-weight:bold;
+  font-family:Sans-serif;
+  font-size:13px;
+}
+#i {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100px;
+}

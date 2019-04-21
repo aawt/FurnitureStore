@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Furniture Store</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <div id="store">
+
+    <div v-if="loading">Loading...</div>
+
+    <div v-else>
+
+      <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Photo</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+
+    <template v-for="item in inventory">
+      <tr class="active">
+
+        <td>
+          <a :href="item.imageUrl" target="_blank">
+          <img :src="item.imageUrl" id="i"></a>
+        </td>
+
+        <td> {{ item.name }} </td>
+        <td> {{ item.description }} </td>
+        <td> ${{ item.cost }} </td>
+
+        </tr>
+
+    </template>
+    </tbody>
+    </table>
+
+    </div>
+    </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

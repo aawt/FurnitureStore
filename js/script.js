@@ -1,13 +1,10 @@
-Vue.filter('price', function (limit) {
-    return price(limit);
-});
-
 var vm = new Vue({
   el: '#store',
   data () {
      return {
          inventory: null,
-         loading: true
+         loading: true,
+         search: ''
      }
    },
    mounted () {
@@ -20,6 +17,12 @@ var vm = new Vue({
           console.log(error)
         })
         .finally(() => this.loading = false)
-    }
-
+    },
+    computed: {
+      filteredInventory() {
+        return this.inventory.filter(item => {
+          return item.description.toLowerCase().includes(this.search.toLowerCase())
+        })
+      }
+    },
   })

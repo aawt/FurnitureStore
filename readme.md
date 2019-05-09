@@ -1,6 +1,5 @@
 # Furniture Store
 ---
-### Epicodus Code Challenge April 19th, 2019
 ## by Aaron Taylor
 ---
 ### Description
@@ -16,10 +15,7 @@ git clone https://github.com/aawt/FurnitureStore
 None
 
 ### Support and contact details
-aarontaylor@gmail.com
+aar0n@aol.com
 
 ### Technologies Used
 VueJS, PureCSS, CSS, HTML, JavaScript
-
-### License.
-MIT
